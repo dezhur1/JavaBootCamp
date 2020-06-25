@@ -25,11 +25,13 @@ public class Rectangle extends Shape {
 	public void setBreath(double breath) {
 		this.breath = breath;
 	}
-	public double calculateArea(double lengh, double breath) {
+
+	@Override
+	public double calculateArea() {
 		return lengh*breath;
 	}
-	public calculatePerimeter(double lengh, double breath) {
-		return lengh*breath*2
-		
+	@Override
+	public double calculatePerimeter() {
+		return (lengh+breath)*2;
 	}
 }
