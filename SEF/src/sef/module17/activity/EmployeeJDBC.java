@@ -7,14 +7,14 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 
-public class EmployeeJDBC {
+public class EmployeeJDBC { 
 
 	public Connection createConnection()
 	{
 		Connection con=null;
 		String url = "jdbc:mysql://localhost/activity";
 		String user = "root";
-		String pass = "adbd1234";
+		String pass = "password";
 
 		try {
 			Class.forName("com.mysql.jdbc.Driver");

@@ -27,7 +27,7 @@ public class SQLExceptionActivity {
 			} catch (ClassNotFoundException e) {
 				System.out.println("Calss not found!");
 			} catch (SQLException e) {
-				System.out.println("SQL!");
+				System.out.println("SQL error!");
 			}
 
 			//2 - You also need to catch SQLException for it to compilej
