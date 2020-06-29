@@ -5,12 +5,15 @@ package sef.module8.activity;
 
 public class CustomExceptionActivityTest {
 
+	public static int flag;
+	
 	//1 - Type main method and call validateUser() from it.
 	//Call this method with different names to test it 
 	public static void main(String[] args) throws CustomExceptionActivity {
-		validateUser("Stacie");
-		if (flag = 0) { 
-			throw new CustomExceptionActivit(); }
+		validateUser("nonexistentuser");
+		if (flag == 0) { 
+			throw new CustomExceptionActivity();
+		}
 	}
 
 
@@ -18,7 +21,7 @@ public class CustomExceptionActivityTest {
 	//array of names
 		String []validUsers={"John","Mike","Shanti","Stacie"};
 //flag stores 1 if a match is found else it should remain 0 
-		int flag=0;
+		flag=0;
 		for(int i=0;i<4;i++){
 			if (name == validUsers[i]) {
 				flag =1;
